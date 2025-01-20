@@ -1,0 +1,63 @@
+body{
+  font-family:'Times New Roman', Times, serif ;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+ }
+  header{
+    background:#4CAF50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  main{
+    margin: 20px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  input, button {
+    padding: 10px;
+    margin: 5px 0;
+  } 
+  /*CSS for buttons */ 
+  button{
+     background-color: orange;
+     color: #fff;
+     border: none;
+     cursor: pointer;
+  }
+/* Hover effects for buttons */
+  button:hover{
+    background-color: #4CAF50;
+  }
+/* CSS for student data in table */
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}  
+table, th, td{
+  border: 1px solid black;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+#studentsTable tbody {
+  display: block;/* makes tbody scrollable */
+  max-height: 200px;
+  overflow-y: auto;/*Adds vertical scrollbar when content exceeds max height */
+  width: 100%;
+}
+#studentsTable thead,
+#studentsTable tbody tr {
+  display: table; /* Ensures rows align with headers */
+  width: 100%;
+  table-layout: fixed; /* Prevent layout shifts */
+}
+  
+  
+  
